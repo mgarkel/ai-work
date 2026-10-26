@@ -39,7 +39,7 @@ Your rules live in `ai-work-rules.md`: in your personal context portfolio if it'
    Or from a terminal:
    - **Codex:** `codex plugin marketplace add https://github.com/mgarkel/ai-work.git`, then `codex plugin add ai-work@ai-work`
    - **Claude Code:** `/plugin install ai-work --marketplace mgarkel/ai-work`
-3. Turn on auto-update for it if your app offers that.
+3. Keep it up to date: the ChatGPT desktop app updates plugins when you restart it. In other apps, turn on auto-update if offered.
 
 It includes a copy of Anthropic's [discernment-nudge](https://github.com/anthropics/skills/tree/main/skills/discernment-nudge) skill, so you don't need to install that separately.
 
