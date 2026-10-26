@@ -7,6 +7,7 @@ Project folder/
 ├── AGENTS.md                  project instructions (one line about ai-work/, added with permission)
 ├── project-context.md
 ├── ai-work-rules.md           the user's rules, only if the portfolio isn't connected
+├── sources/                   documents saved as sources (or wherever this project keeps them)
 ├── outputs/                   finished work (or wherever this project keeps finished work)
 └── ai-work/
     ├── index.md               one line per job
@@ -37,6 +38,10 @@ Lessons about the user that aren't rules for this skill (writing style, where au
 - **One folder per job,** quick jobs included. Name: the start date, then two to four lowercase words from the north star, joined by hyphens, for example `2026-10-26-q3-investor-update`. Suggest the name during planning; the user can change it. If the name is taken, add `-2`.
 - **`index.md`:** add the job when its folder is created and update its status at each step: `planning`, `working`, `in review`, `waiting for your check`, `debriefed`, `results checked`. Step 1 reads it to find related past jobs.
 - **`lessons.md`:** lessons that only apply to this project, added during debriefs with the user's approval.
+
+## Sources
+
+Documents you save while researching (a report, a PDF, a dataset) go where the project keeps material from others: `sources/` in the usual layout. Record each one in the plan's context with where it came from and the date. Saving a document is fine; opening or running it as a program never is.
 
 ## Finished work
 

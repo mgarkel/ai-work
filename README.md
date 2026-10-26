@@ -40,7 +40,7 @@ It includes a copy of Anthropic's [discernment-nudge](https://github.com/anthrop
 
 ## What it can reach
 
-It reads your project's files, your personal context portfolio, and, if connected, your email, calendar, and cloud files, read-only. It writes only in your project's folder and your portfolio's `ai-work-rules.md`. It never sends, publishes, deletes, or writes to connected apps without your approval, and never installs or downloads anything unless an approved plan calls for it. To check its own work it may use what's already on your computer (counting words, adding up numbers, previewing a page), read-only, and it tells you what it checked.
+It reads your project's files, your personal context portfolio, and, if connected, your email, calendar, and cloud files, read-only. It writes only in your project's folder and your portfolio's `ai-work-rules.md`. It never sends, publishes, deletes, or writes to connected apps without your approval, and never installs software unless an approved plan calls for it. It may save documents it finds (a report, a PDF) to your project's sources folder, noting where each came from. To check its own work it may use what's already on your computer (counting words, adding up numbers, previewing a page), read-only, and it tells you what it checked.
 
 See [CHANGELOG.md](CHANGELOG.md) for what's new and [CREDITS.md](CREDITS.md) for where the ideas come from.
 
