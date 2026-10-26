@@ -33,8 +33,11 @@ Your rules live in `ai-work-rules.md`: in your personal context portfolio if it'
 ## Install
 
 1. Before installing any plugin, check: who made it, what it does, what it can reach, anything surprising, and whether it's maintained. You can ask your AI to read this repository and answer those questions.
-2. Add this repository (`https://github.com/mgarkel/ai-work`) as a plugin source in your app and install **ai-work**. From a terminal:
-   - **ChatGPT desktop / Codex:** `codex plugin marketplace add https://github.com/mgarkel/ai-work.git`, then `codex plugin add ai-work@ai-work`
+2. Add this repository (`https://github.com/mgarkel/ai-work`) as a plugin source in your app and install **ai-work**.
+   - **ChatGPT desktop app:** Settings › Plugins › **Add marketplace**, paste `https://github.com/mgarkel/ai-work`. The plugin then appears under **Personal**; click **Install plugin**.
+
+   Or from a terminal:
+   - **Codex:** `codex plugin marketplace add https://github.com/mgarkel/ai-work.git`, then `codex plugin add ai-work@ai-work`
    - **Claude Code:** `/plugin install ai-work --marketplace mgarkel/ai-work`
 3. Turn on auto-update for it if your app offers that.
 
