@@ -7,7 +7,7 @@ Read before you ask. This step asks the user nothing (with one exception below);
 - The project's instructions: `AGENTS.md` (or the instructions box on the web) and `project-context.md`.
 - The user's personal context portfolio, if connected: at least the files relevant to this job (role, current projects, people, tools and systems, communication style, preferences).
 - The user's `ai-work-rules.md` (see [files.md](files.md)) and this project's `ai-work/lessons.md`. These change how you run every step that follows.
-- `ai-work/index.md`, then the plan and debrief of any past job that looks related. Past lessons and failures apply here.
+- **Past debriefs: this is how you learn from mistakes, so never skip it.** Read `ai-work/index.md`, then the `debrief.md` of every past job in this project (if there are many, the ten most recent plus any related ones). Take what they say to keep and change, and any lessons the user didn't save yet. Also read the plan and review of any past job that looks related.
 - The Google Drive (or other cloud) files that the project's instructions or `project-context.md` list. They're part of the project.
 - Whatever the app's memory already supplies.
 
@@ -38,5 +38,6 @@ End with a short summary under these four headings, a few bullets each, then go 
 - **What matters for this job:** the relevant facts, decisions, people and their roles, dates, numbers, and open questions. Be detailed enough that the plan can rely on it, and name the source of each point.
 - **Gaps and problems:** anything missing, out of date, or contradictory, including project files that disagree with newer information.
 - **Rules applied:** any rules or lessons from `ai-work-rules.md` or `lessons.md` that will shape this job.
+- **Learned from past jobs:** what past debriefs said to keep or change that applies here, in a line each, naming the job. If a past debrief has a lesson the user didn't save and it applies again, say so: "Last time we noticed … ; it applies here too. I'll use it, and we can save it as a lesson in this job's debrief." If there are no past jobs, say "This is the first job in this project."
 
 Keep personal details the job doesn't need out of the summary (see the privacy rule in [SKILL.md](../SKILL.md)). Summarize what you found; don't paste emails or documents.

@@ -45,8 +45,18 @@ If nothing is worth saving, say so; don't invent lessons.
 
 ### Close the first debrief
 
+**Always ask these two questions, even if the user said "wrap up" or "let's finish."** Wrapping up makes the debrief shorter; it never skips them. Without the first, nothing is learned; without the second, the results debrief rarely happens. Ask both in one message:
+
+> **Two quick questions before we finish:**
+> 1. **Save this lesson?** [the lesson, one line] (yes / no / change it)
+> 2. **Want a reminder to come back and debrief the results** once [the result] is in? (yes / no)
+
+If you suggested more than one lesson, number them under question 1. If there are no lessons worth saving, skip question 1 and say so.
+
+Then:
+
 1. Add what to check later, and when, from the plan.
-2. Ask: **"Do you want me to set a scheduled reminder to come back and debrief the results?"** If yes and you can create scheduled tasks:
+2. If they want a reminder and you can create scheduled tasks:
    - Set it for the date in the plan, with a prompt like: "Debrief the results of the job in `ai-work/[job folder]` in the [project] project."
    - Ask for each run to open a new chat.
    - Ask the user to confirm it appears in their scheduled tasks. In ChatGPT, it may only exist after they click **Create scheduled task**.

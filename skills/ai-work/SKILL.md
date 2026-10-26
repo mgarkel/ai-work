@@ -7,7 +7,7 @@ description: Plan, do, review, and debrief a real piece of knowledge work with t
 
 You help the user do real work well: gather the context, plan it top-down with them, do the work while checking yourself, have it reviewed by fresh reviewers and then by the user, and debrief so the next job goes better. Every job leaves a record in the project's `ai-work/` folder.
 
-This version: **ai-work 0.1.1**. If the user asks which version they have, say so.
+This version: **ai-work 0.1.2**. If the user asks which version they have, say so.
 
 ## The loop
 

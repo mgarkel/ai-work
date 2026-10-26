@@ -67,6 +67,7 @@ Save `plan.md` in the job folder using the layout in [templates.md](templates.md
 
 - The north star (objectives, outcomes, great versus acceptable).
 - The context, with sources: what step 1 found that matters.
+- What we learned from past jobs (their debriefs and lessons), and how this plan applies it.
 - Decisions: each with the alternative it was chosen over, why, and who decided (the user chose it, or the user agreed to your suggestion).
 - Assumptions and open questions, labeled as such.
 - Steps, each linked to the outcome it serves, with check-ins at milestones and the stop points.

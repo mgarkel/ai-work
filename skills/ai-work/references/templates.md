@@ -42,6 +42,9 @@ Read before every job in this project. These override the general rules in ai-wo
 ## Context
 - [Fact or point] (source: …)
 
+## Learned from past jobs
+- [What a past debrief or lesson said, and how this plan applies it] (from: [job folder])
+
 ## Decisions
 | Decision | Chosen over | Why | Decided by |
 | --- | --- | --- | --- |

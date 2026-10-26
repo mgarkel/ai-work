@@ -1,5 +1,13 @@
 # What's new
 
+## 0.1.2 (October 26, 2026)
+
+- **Learns from past jobs:** every new job starts by reading the project's past debriefs, says what it learned from them, and applies it in the plan.
+- **The debrief always closes the loop:** even when you say "wrap up", it asks whether to save the lesson and whether you want a reminder to debrief the results.
+- **Plan review is clearer:** obvious fixes from the reviewers go straight into the plan, and anything that needs your decision is shown under "Needs your decision before I start."
+- The first time in a project, it explains why it wants an `ai-work` folder before asking.
+- The README says the ChatGPT desktop app updates plugins when you restart it, and gives the app's install steps.
+
 ## 0.1.1 (October 26, 2026)
 
 - Every message during a job starts with where you are ("Step 2 of 5 · Planning"), and the plan's approval point is unmistakable.
