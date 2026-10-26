@@ -1,0 +1,17 @@
+{
+  "name": "ai-work",
+  "version": "0.1.0",
+  "description": "Plan, do, review, and debrief real knowledge work with AI, step by step. Plans top-down, checks its own work, gets fresh reviewers and then you to check it, and learns from every job. Keeps a record of each job in your project's ai-work folder, and lets you make it your own with your own rules.",
+  "author": {
+    "name": "Manav Garkel"
+  },
+  "license": "MIT",
+  "keywords": [
+    "knowledge-work",
+    "planning",
+    "review",
+    "debrief",
+    "pre-mortem",
+    "checklist"
+  ]
+}

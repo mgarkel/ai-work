@@ -1,0 +1,24 @@
+{
+  "name": "ai-work",
+  "owner": {
+    "name": "Manav Garkel"
+  },
+  "metadata": {
+    "description": "Plan, do, review, and debrief real knowledge work with AI."
+  },
+  "plugins": [
+    {
+      "name": "ai-work",
+      "source": "./",
+      "description": "Plan, do, review, and debrief real knowledge work with AI, step by step, and make it your own with your own rules.",
+      "category": "productivity",
+      "tags": [
+        "knowledge-work",
+        "planning",
+        "review",
+        "debrief"
+      ],
+      "license": "MIT"
+    }
+  ]
+}
