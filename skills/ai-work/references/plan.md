@@ -74,7 +74,7 @@ Save `plan.md` in the job folder using the layout in [templates.md](templates.md
 
 ## F. Approval
 
-Give a short "here's what we agreed": the north star, the approach, the main decisions, the stop points, and the checklist, in a few lines, with the plan file's path. Then ask the user to:
+Make it unmistakable that planning is finished and this is the approval point. Open with: **"The plan is ready for your approval."** Then give a short "here's what we agreed": the north star, the approach, the main decisions, the stop points, the checklist, and what happens next (the work, then the review, then your check), in a few lines, with the plan file's path. Then ask the user to:
 
 1. approve it,
 2. change something,
