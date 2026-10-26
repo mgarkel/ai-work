@@ -54,8 +54,12 @@ Work through the list from B, one topic at a time, using the rules above. For st
 
 - Start each reviewer as a separate helper (a sub-agent) **without this conversation's history**, so it judges the plan on its own. In ChatGPT, helpers get the conversation by default, so ask for a clean one that doesn't. In Claude, helpers start without it. Give each one only its brief, the plan file, and the sources it needs.
 - If you can't start helpers, do each review yourself as a clearly separate pass, and tell the user it isn't independent.
-- Combine their findings: merge duplicates, drop anything you can disprove from the plan or sources, and list the rest with your recommendation for each. Save the full findings in the job's `review.md` under "Plan review", and a short summary in `plan.md`.
-- **Present the findings with the approval question (F), in the same message,** so the user decides on them and approves the plan in one reply ("approved", "approved, but skip the second one"). Make the changes they accept in `plan.md`. Only pause separately if a finding needs the user's decision before the plan makes sense (for example, the reviewers think the topic itself is wrong).
+- Combine their findings: merge duplicates and drop anything you can disprove from the plan or sources. Save the full findings in the job's `review.md` under "Plan review".
+- **Sort what's left into two groups:**
+  - **Obvious fixes:** one right answer that doesn't change anything the user decided (a missing step, an unclear sentence, a wrong number, a gap such as "explain how to use this for their own business"). **Make these in `plan.md` yourself.**
+  - **Needs the user's decision:** anything that would change the goal, the scope, the topic, a decision the user made, or that depends on their preference. **Don't change these; ask.** For each, give the realistic options and your recommendation.
+- In `plan.md`'s "Plan review" section, list what you added and what was left for the user to decide.
+- Then go to F. The findings and the approval question go in one message.
 
 ## E. Write the plan
 
@@ -75,12 +79,21 @@ Save `plan.md` in the job folder using the layout in [templates.md](templates.md
 
 ## F. Approval
 
-Make it unmistakable that planning is finished and this is the approval point. Open with: **"The plan is ready for your approval."** Then give a short "here's what we agreed": the north star, the approach, the main decisions, the stop points, the checklist, and what happens next (the work, then the review, then your check), in a few lines, with the plan file's path. Then ask the user to:
+Make it unmistakable that planning is finished and this is the approval point. Open with: **"The plan is ready for your approval."** Then give a short "here's what we agreed": the north star, the approach, the main decisions, the stop points, the checklist, and what happens next (the work, then the review, then your check), in a few lines, with the plan file's path.
+
+For standard and important jobs, then report the plan review in two clearly separate parts:
+
+- **"The reviewers suggested [N] improvements. I've already added these to the plan:"** one line each.
+- **"⚠ Needs your decision before I start:"** numbered, each with the options and your recommendation. Make it impossible to miss: put it last, just before the question, and say that the work can't start until these are answered. If nothing needs a decision, say "Nothing needs your decision."
+
+Then ask the user to:
 
 1. approve it,
 2. change something,
 3. add context you missed, or
 4. make the job bigger or smaller.
+
+If anything needs a decision, the question asks for those answers first: "Reply with your choice for each decision above, and whether you approve the plan." Don't treat a plain "approved" as answering them; if they reply without choosing, use your recommendation only after confirming it in one line.
 
 End your message with that question. Don't add anything after it, and don't explain why you're asking.
 
