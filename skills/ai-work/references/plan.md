@@ -54,7 +54,8 @@ Work through the list from B, one topic at a time, using the rules above. For st
 
 - Start each reviewer as a separate helper (a sub-agent) **without this conversation's history**, so it judges the plan on its own. In ChatGPT, helpers get the conversation by default, so ask for a clean one that doesn't. In Claude, helpers start without it. Give each one only its brief, the plan file, and the sources it needs.
 - If you can't start helpers, do each review yourself as a clearly separate pass, and tell the user it isn't independent.
-- Combine their findings: merge duplicates, drop anything you can disprove from the plan or sources, and list the rest with your recommendation for each. The user chooses what to change. Save the full findings in the job's `review.md` under "Plan review", and a short summary of findings and changes in `plan.md`.
+- Combine their findings: merge duplicates, drop anything you can disprove from the plan or sources, and list the rest with your recommendation for each. Save the full findings in the job's `review.md` under "Plan review", and a short summary in `plan.md`.
+- **Present the findings with the approval question (F), in the same message,** so the user decides on them and approves the plan in one reply ("approved", "approved, but skip the second one"). Make the changes they accept in `plan.md`. Only pause separately if a finding needs the user's decision before the plan makes sense (for example, the reviewers think the topic itself is wrong).
 
 ## E. Write the plan
 
