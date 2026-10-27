@@ -1,5 +1,12 @@
 # What's new
 
+## 0.1.3 (October 27, 2026)
+
+- **Job sizes go by how much work it is and what a mistake would cost,** not by whether other people see it. A short reply to a colleague is a quick job.
+- **You start it yourself:** pick ai-work from the `/` menu, type `$ai-work`, or ask for ai-work. It no longer starts on its own when you ask for other work. Once a job has started, it carries on through the whole job without you naming it again.
+- **Changes to finished work** go into that job's log instead of starting a new job.
+- **Quick jobs run straight through:** no approval, no check-ins, no waiting. It still writes the plan, review, and debrief, so every job adds to the project's record, and it stops to suggest a full plan if the job turns out bigger.
+
 ## 0.1.2 (October 26, 2026)
 
 - **Learns from past jobs:** every new job starts by reading the project's past debriefs, says what it learned from them, and applies it in the plan.

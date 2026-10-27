@@ -1,13 +1,14 @@
 ---
 name: ai-work
-description: Plan, do, review, and debrief a real piece of knowledge work with the user, saving each job's plan, review, and debrief in the project's ai-work folder. Use when the user asks to plan a job or a piece of work ("plan the Q3 investor update", "let's plan this"), to review or check work planned this way, to debrief a job ("debrief the investor update"), to add, show, or change their rules ("add a rule: ..."), to pick up a job where it left off, or mentions ai-work. Not for quick questions, simple lookups, casual chat, or writing code.
+description: Plan, do, review, and debrief a real piece of knowledge work with the user, saving each job's plan, review, and debrief in the project's ai-work folder. The user starts it themselves (from the / menu, with $ai-work, or by asking for ai-work) to plan a job, review or debrief one, change their rules, or pick a job back up.
+disable-model-invocation: true
 ---
 
 # AI work: plan, work, review, debrief
 
 You help the user do real work well: gather the context, plan it top-down with them, do the work while checking yourself, have it reviewed by fresh reviewers and then by the user, and debrief so the next job goes better. Every job leaves a record in the project's `ai-work/` folder.
 
-This version: **ai-work 0.1.2**. If the user asks which version they have, say so.
+This version: **ai-work 0.1.3**. If the user asks which version they have, say so.
 
 ## The loop
 
@@ -21,28 +22,38 @@ This version: **ai-work 0.1.2**. If the user asks which version they have, say s
 
 Read the reference file for a step when you reach it, every time. Don't run a step from memory of this table.
 
+**The user starts ai-work; then it runs the whole job.** It only starts when the user asks for it. Once a job has started in this conversation, every later message in it (answers, "approved", "done", "debrief") continues the job under these instructions, without the user naming ai-work again, until the job is debriefed or the user says to stop. If the user asks for something unrelated in the same conversation, do that normally and say the job is paused.
+
 **Where to start, from what the user says:**
 
-- A new job ("plan …", "help me with …" plus "plan it"): step 1, then step 2. Once the plan is approved, go straight into step 3, then step 4. Start step 5 after the user responds to "For you to check".
+- A new job ("plan …", "help me with …" plus "plan it"): step 1, then step 2. Once the plan is approved, go straight into step 3, then step 4. Start step 5 after the user responds to "For you to check". A **quick** job has no approval and no waiting: go straight through steps 1 to 5 (see Job sizes).
 - "Review …" for a job that has a plan: step 4.
 - "Debrief …": step 5. If the job's first debrief is done, this is the results debrief.
 - "Add a rule: …", "show my rules", "change my rule …": [rules.md](references/rules.md).
+- A change to a job's finished work ("make the email shorter"): make it, recheck the changed part, and add it to that job's running log. Don't start a new job.
 - "Where were we?", or a job already in `ai-work/`: read `ai-work/index.md` and that job's `plan.md`, say where it stands in one line, and continue from there.
 
 Before writing any file, read [files.md](references/files.md). File layouts are in [templates.md](references/templates.md).
 
 ## Job sizes
 
-At the start of planning, suggest a size and let the user confirm or change it.
+Size a job by how much work it is and what a mistake would cost, not by whether other people will see it.
 
 | | Quick | Standard | Important |
 | --- | --- | --- | --- |
-| What it is | Small, clear, low stakes, only for the user, easy to redo | Most real work: anything used with, sent to, or decided by other people | High stakes, hard to undo, or many people affected |
-| Plan | Short: north star and steps | Full | Full, with a deeper talk-through and pre-mortem |
+| What it is | One short piece the user will read before it's used, and easy to redo. It can still go to other people (a reply, a short note). More than one piece (a handout plus its email) is never quick. | Several parts or steps, about an hour or more if the user did it themselves, or other people will rely on it without the user rereading every line | High stakes, hard to undo, or many people affected |
+| Stops for the user | None: it runs straight through to the end | The plan's approval, milestones, and the user's check | Same as standard |
+| Plan | Short: north star, steps, checklist, and assumptions | Full | Full, with a deeper talk-through and pre-mortem |
 | Plan reviewers | None | All five | All five |
-| Check-ins | At the end | At the plan's milestones | More milestones |
-| Review | Your own check only, then "For you to check" | Four reviewers, plus the devil's advocate when the work recommends or decides something | Same as standard |
-| Debrief | Only if something went wrong or the user corrected you | Both debriefs | Both debriefs |
+| Check-ins | None | At the plan's milestones | More milestones |
+| Review | Your own check, then "For you to check" | Four reviewers, plus the devil's advocate when the work recommends or decides something | Same as standard |
+| Debrief | A short first debrief, straight after the review | Both debriefs | Both debriefs |
+
+At the start of planning, suggest a size in one line with your reason.
+
+- **Standard or important:** the user confirms or changes it.
+- **Quick:** don't wait. Say: "This looks like a quick job, so I'll go straight through and show you the result. Say **plan it properly** if you'd rather do the full process." Then carry on. The last message always has three parts, in this order: the result, the "For you to check" list, and the short debrief ending with its closing questions. A quick job still writes every file (plan, review, debrief): each job's record is context for the next one. The hard stops below still apply, and a quick job never installs software.
+- **If a quick job turns out bigger than it looked** (more parts, a question whose answer would change the goal, or something costly to get wrong), stop and suggest switching to standard.
 
 ## Ground rules (every step)
 

@@ -4,7 +4,7 @@ Every debrief opens with this exact sentence: **"Debriefing is how I learn from 
 
 **In the chat,** show the debrief itself, not just the lessons: your answers to the four questions (a line or two each), then each suggested lesson with when to apply it, how sure you are, and where you suggest saving it. The user can't approve lessons well without seeing why you're suggesting them.
 
-There are two: the first debrief, after the user's check, and the results debrief, once the real-world result is in. For a **quick** job, debrief only if something went wrong or the user corrected you; otherwise set the status to `debriefed` and stop.
+There are two: the first debrief, after the user's check, and the results debrief, once the real-world result is in. For a **quick** job, do a short first debrief straight after the review, without waiting for the user's check: the four questions in a line each, and a lesson only if there's a real one. The final message holds the result, the "For you to check" list, and the debrief, and ends with the closing questions (ask about a reminder only if there's a real-world result to wait for). If the user later raises something from their check, fix it, add it to `debrief.md`, and offer to save it as a lesson.
 
 ## The first debrief
 

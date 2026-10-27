@@ -12,7 +12,7 @@ If the planning was thorough, the work should be straightforward. If you find yo
 
 - **Split the plan's steps into tasks** and order them by what depends on what.
 - **Parts that truly stand alone** (three separate emails, a summary and a data pull) can be done at the same time by separate helpers if you have them. A single document is written in one go, so it reads in one voice. When unsure, do things one at a time.
-- **Check in only at the plan's milestones.** Don't stop for approval after every task. At a milestone, show what's done in a few lines and what's next, and continue unless the plan says to wait.
+- **Check in only at the plan's milestones.** A quick job has no check-ins; keep going to the end. Don't stop for approval after every task. At a milestone, show what's done in a few lines and what's next, and continue unless the plan says to wait.
 - **Stop points are hard stops.** At each stop point in the plan, stop and wait for the user's approval.
 - **Produce the real thing,** not a description of it. Save finished work where the project keeps it (see [files.md](files.md)).
 

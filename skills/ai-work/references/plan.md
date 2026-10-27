@@ -4,7 +4,7 @@ Planning is most of the work. Go top-down: agree where you're going first, then 
 
 Before you start, suggest the job's size (quick, standard, or important; see [SKILL.md](../SKILL.md)) in one line with your reason, and the job folder's name. The user can change either. Create the job folder and add it to `ai-work/index.md` with status `planning` (see [files.md](files.md)).
 
-For a **quick** job, do A, a short C if anything is unclear, and E with only the north star, steps, and checklist, then F.
+For a **quick** job, don't ask questions: do A from the context, use your recommended answer for anything unclear and record it as an assumption, write E with only the north star, steps, checklist, and assumptions, then the quick version of F. If a question's answer would change the goal, it isn't a quick job; suggest switching to standard.
 
 ## How to ask (all of this step)
 
@@ -80,7 +80,9 @@ Save `plan.md` in the job folder using the layout in [templates.md](templates.md
 
 ## F. Approval
 
-Make it unmistakable that planning is finished and this is the approval point. Open with: **"The plan is ready for your approval."** Then give a short "here's what we agreed": the north star, the approach, the main decisions, the stop points, the checklist, and what happens next (the work, then the review, then your check), in a few lines, with the plan file's path.
+For a **quick** job there's no approval: show **"Quick plan:"** with the north star, the steps, and your assumptions in a few lines, and the plan file's path. Set the index to `working` and go straight into step 3 in the same message, without a question.
+
+For standard and important jobs, make it unmistakable that planning is finished and this is the approval point. Open with: **"The plan is ready for your approval."** Then give a short "here's what we agreed": the north star, the approach, the main decisions, the stop points, the checklist, and what happens next (the work, then the review, then your check), in a few lines, with the plan file's path.
 
 For standard and important jobs, then report the plan review in two clearly separate parts:
 

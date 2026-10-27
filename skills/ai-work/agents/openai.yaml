@@ -1,0 +1,6 @@
+interface:
+  display_name: "ai-work"
+  short_description: "Plan, do, review, and debrief a real piece of work"
+  default_prompt: "Use $ai-work to plan a new job with me: "
+policy:
+  allow_implicit_invocation: false

@@ -1,6 +1,6 @@
 # Step 4: Review, then the user's check
 
-The work is checked by reviewers who didn't do it, then by the user. For a **quick** job, skip the reviewers: do your own check (the "Check yourself" list in [work.md](work.md)) and go to "For you to check".
+The work is checked by reviewers who didn't do it, then by the user. For a **quick** job, skip the reviewers: do your own check (the "Check yourself" list in [work.md](work.md)), save "For you to check" in `review.md`, and go straight into step 5 without waiting. The list goes in the final message, with the debrief.
 
 ## The reviewers
 

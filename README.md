@@ -9,7 +9,7 @@ Most AI work goes wrong in predictable ways: the wrong goal, hidden assumptions,
 | Step | What happens |
 | --- | --- |
 | 1. Gather context | Reads your project, your rules, past jobs, and relevant email, calendar, and files, then summarizes what matters |
-| 2. Plan | Agrees the north star with you, lays out approaches and decisions, talks them through, imagines what could go wrong, has five fresh reviewers check the plan, and waits for your approval |
+| 2. Plan | Agrees the north star with you, lays out approaches and decisions, talks them through, imagines what could go wrong, has five fresh reviewers check the plan, and waits for your approval (a quick job goes straight through) |
 | 3. Work | Does the work, citing a source for every fact and checking itself as it goes, with check-ins at milestones |
 | 4. Review, then you | Fresh reviewers check the work; then you get a short "For you to check" list |
 | 5. Debrief | Saves what it learned, after the work and again once the result is in |
@@ -18,13 +18,15 @@ Each job's plan, review, and debrief are saved in your project's `ai-work/` fold
 
 ## Use it
 
-In a chat inside one of your projects:
+It only runs when you ask for it, so it never takes over a quick question or a brainstorm. In a chat inside one of your projects, type `/` and pick **ai-work**, or start your message with "Use ai-work to …":
 
-- **"Plan [the job]"** starts a new job.
-- **"Review [the job]"** reviews work that has a plan.
-- **"Debrief [the job]"** runs a debrief.
-- **"Add a rule: …"** customizes it. **"Show my rules"** lists your rules.
-- **"Where were we?"** picks up a job where it left off.
+- **"Use ai-work to plan [the job]"** starts a new job.
+- **"Use ai-work to review [the job]"** reviews work that has a plan.
+- **"Use ai-work to debrief [the job]"** runs a debrief.
+- **"Use ai-work to add a rule: …"** customizes it. **"Show my rules"** lists your rules.
+- **"Use ai-work: where were we?"** picks up a job where it left off, in a new chat.
+
+Once a job has started, just reply; you don't need to name it again in that chat.
 
 ## Make it yours
 
